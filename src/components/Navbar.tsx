@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/Logo.png";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
@@ -28,8 +29,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="font-serif text-2xl font-bold text-primary tracking-wide">
-          Lumina Despertar
+        <Link to="/">
+          <img src={logo} alt="Lumina Despertar" className="h-10 md:h-12" />
         </Link>
 
         {/* Desktop */}
