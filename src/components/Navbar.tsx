@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,19 @@ const WHATSAPP_URL = "https://wa.me/1234567890?text=Hola%2C%20me%20gustaría%20a
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY;
+      setHidden(y > 100 && y > lastScrollY.current);
+      lastScrollY.current = y;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
@@ -26,8 +39,15 @@ const Navbar = () => {
     }
   };
 
+  const show = !hidden || hovered || window.scrollY <= 0;
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border transition-transform duration-300"
+      style={{ transform: show ? "translateY(0)" : "translateY(-100%)" }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
       <div className="container mx-auto px-4 py-8 flex items-center justify-between">
         <Link to="/">
           <img src={logo} alt="Lumina Despertar" className="h-20 md:h-24" />
