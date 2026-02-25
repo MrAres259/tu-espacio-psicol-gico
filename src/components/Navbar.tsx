@@ -28,9 +28,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4 py-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-8 flex items-center justify-between">
         <Link to="/">
-          <img src={logo} alt="Lumina Despertar" className="h-16 md:h-20" />
+          <img src={logo} alt="Lumina Despertar" className="h-20 md:h-24" />
         </Link>
 
         {/* Desktop */}
