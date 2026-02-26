@@ -36,18 +36,18 @@ const AboutSection = () => {
           {/* Content */}
           <div className={`${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
             <p className="text-accent font-medium text-sm uppercase tracking-widest mb-2">Sobre Mí</p>
-            <h2 className="text-4xl font-serif font-bold text-foreground mb-6">
-              Dra. [Nombre de la Psicóloga]
+             <h2 className="text-4xl font-serif font-bold text-foreground mb-6">
+              Dra. Liliana Carpio Torres
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Soy psicóloga clínica con más de 10 años de experiencia acompañando a personas
-              en su proceso de autoconocimiento y bienestar emocional. Mi enfoque terapéutico
-              combina técnicas cognitivo-conductuales con una perspectiva humanista, creando
-              un espacio seguro y cálido para cada paciente.
+              Soy psicóloga clínica con más de 30 años de experiencia acompañando personas
+              en su proceso de autoconocimiento, liberándose de las cargas que dejan heridas
+              y traumas a lo largo de la vida, logrando desarrollo y crecimiento en todas las
+              esferas vitales, alcanzando así bienestar y plenitud.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Creo firmemente que cada persona tiene la capacidad de transformar su vida.
-              Mi rol es ser tu guía en ese camino de despertar interior, brindándote las
+              Mi rol es ser tu guía y compañera en la senda del despertar interior, brindándote las
               herramientas necesarias para alcanzar tu máximo potencial.
             </p>
 
