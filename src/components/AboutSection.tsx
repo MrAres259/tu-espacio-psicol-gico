@@ -2,8 +2,8 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { GraduationCap, Award, Heart, Clock } from "lucide-react";
 
 const highlights = [
+  { icon: GraduationCap, label: "Licenciada en Psicología por la Universidad Nacional Autónoma de México" },
   { icon: GraduationCap, label: "Cursando la Maestría en Hipnosis Clínica" },
-  { icon: Award, label: "Especialización en Hipnosis Tradicional e Hipnosis Eriksoniana" },
   { icon: Clock, label: "Más de 15 años de experiencia" },
   { icon: Heart, label: "Enfoque Cognitivo Conductual" },
 ];
