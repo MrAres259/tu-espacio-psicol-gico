@@ -1,5 +1,6 @@
 import psychologyImg from "@/assets/psychology.jpg";
 import hypnosisImg from "@/assets/hypnosis.jpg";
+import peaceImg from "@/assets/peace.jpg";
 
 export interface BlogPost {
   id: string;
