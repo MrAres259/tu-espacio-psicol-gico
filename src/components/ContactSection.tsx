@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 const contactInfo = [
   { icon: Phone, label: "Teléfono", value: "+1 234 567 890" },
   { icon: Mail, label: "Email", value: "contacto@luminadespertar.com" },
-  { icon: MapPin, label: "Dirección", value: "Calle Principal 123, Ciudad" },
+  { icon: MapPin, label: "Dirección", value: "Ciudad de México CP 11360" },
   { icon: Clock, label: "Horarios", value: "Lun-Vie: 9:00 - 18:00" },
 ];
 
