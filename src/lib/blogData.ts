@@ -1,5 +1,6 @@
 import psychologyImg from "@/assets/psychology.jpg";
 import hypnosisImg from "@/assets/hypnosis.jpg";
+import peaceImg from "@/assets/peace.jpg";
 
 export interface BlogPost {
   id: string;
@@ -41,5 +42,6 @@ export const blogPosts: BlogPost[] = [
     date: "2026-02-22",
     readTime: "3 min",
     category: "Crecimiento Personal",
+    image: peaceImg,
   },
 ];
