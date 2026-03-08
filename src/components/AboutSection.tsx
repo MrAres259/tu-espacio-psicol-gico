@@ -21,8 +21,8 @@ const AboutSection = () => {
             <div className="relative">
               <div className="aspect-[3/4] rounded-2xl bg-secondary overflow-hidden shadow-xl">
                 <img 
-                  src={diplomaImage} 
-                  alt="Diploma de Licenciada en Psicología - Dra. Liliana Carpio Torres" 
+                  src={lialianaPhoto} 
+                  alt="Dra. Liliana Carpio Torres - Psicóloga Clínica" 
                   className="w-full h-full object-cover"
                 />
               </div>
