@@ -10,7 +10,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="pt-24 pb-24">
+      <main className="pt-40 pb-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in-up">
             <p className="text-accent font-medium text-sm uppercase tracking-widest mb-2">Blog</p>
