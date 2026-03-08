@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { User, Users, Monitor, Brain, Baby, Flower2 } from "lucide-react";
+import { User, Users, Monitor, Brain, Baby, Flower2, Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
@@ -7,6 +7,7 @@ const services = [
     icon: User,
     title: "Terapia Individual",
     description: "Sesiones personalizadas enfocadas en tu bienestar emocional, autoconocimiento y crecimiento personal.",
+    showExpertiseStar: true,
   },
   {
     icon: Users,
@@ -20,8 +21,8 @@ const services = [
   },
   {
     icon: Brain,
-    title: "Disminución/Eliminación de Insomnio, Miedo, Ansiedad y Depresión",
-    description: "Técnicas y herramientas poderosas para superar estos padecimientos y recuperar tu tranquilidad.",
+    title: "Adiós a la Ansiedad y el Insomnio",
+    description: "Descubre estrategias probadas para superar la depresión y retomar el control de tu vida.",
   },
   {
     icon: Baby,
@@ -32,9 +33,9 @@ const services = [
     icon: Flower2,
     title: "Hipnosis Clínica",
     description: "Neurociencias aplicadas para liberarte tanto de heridas emocionales y traumas como de enfermedades importantes como cáncer, diabetes y problemas de tiroides.",
+    showExpertiseStar: true,
   },
 ];
-
 const ServicesSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
