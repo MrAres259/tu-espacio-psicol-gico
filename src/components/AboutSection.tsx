@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { GraduationCap, Award, Heart, Clock } from "lucide-react";
-import lialianaPhoto from "@/assets/liliana-photo.png";
+import lilianaPhoto from "@/assets/liliana-photo.png";
 
 const highlights = [
   { icon: GraduationCap, label: "Licenciada en Psicología por la Universidad Nacional Autónoma de México" },
@@ -21,7 +21,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="aspect-[3/4] rounded-2xl bg-secondary overflow-hidden shadow-xl">
                 <img 
-                  src={lialianaPhoto} 
+                  src={lilianaPhoto} 
                   alt="Dra. Liliana Carpio Torres - Psicóloga Clínica" 
                   className="w-full h-full object-cover"
                 />
