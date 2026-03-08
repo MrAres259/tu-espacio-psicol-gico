@@ -1,3 +1,6 @@
+import psychologyImg from "@/assets/psychology.jpg";
+import hypnosisImg from "@/assets/hypnosis.jpg";
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -18,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-08",
     readTime: "5 min",
     category: "Terapia",
-    image: "/src/assets/psychology.jpg",
+    image: psychologyImg,
   },
   {
     id: "hipnosis-clinica",
@@ -28,7 +31,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-01",
     readTime: "4 min",
     category: "Hipnosis Clínica",
-    image: "/src/assets/hypnosis.jpg",
+    image: hypnosisImg,
   },
   {
     id: "date-oportunidad-crecer",

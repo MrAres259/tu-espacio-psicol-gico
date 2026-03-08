@@ -29,10 +29,13 @@ const Blog = () => {
                 className="group overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                {/* Image placeholder */}
-                <div className="aspect-[16/10] bg-secondary flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm">Imagen del artículo</span>
-                </div>
+                {post.image ? (
+                  <img src={post.image} alt={post.title} className="aspect-[16/10] w-full object-cover" />
+                ) : (
+                  <div className="aspect-[16/10] bg-secondary flex items-center justify-center">
+                    <span className="text-muted-foreground text-sm">Imagen del artículo</span>
+                  </div>
+                )}
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
                     <span className="bg-accent/10 text-accent px-2 py-0.5 rounded-full font-medium">
