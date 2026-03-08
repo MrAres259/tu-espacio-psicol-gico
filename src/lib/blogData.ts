@@ -42,5 +42,6 @@ export const blogPosts: BlogPost[] = [
     date: "2026-02-22",
     readTime: "3 min",
     category: "Crecimiento Personal",
+    image: peaceImg,
   },
 ];
