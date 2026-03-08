@@ -2,10 +2,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { GraduationCap, Award, Heart, Clock } from "lucide-react";
 
 const highlights = [
-  { icon: GraduationCap, label: "Maestría en Psicología Clínica" },
-  { icon: Award, label: "Especialización en Terapia Cognitivo-Conductual" },
-  { icon: Clock, label: "+10 años de experiencia" },
-  { icon: Heart, label: "Enfoque humanista e integrativo" },
+  { icon: GraduationCap, label: "Cursando la Maestría en Hipnosis Clínica" },
+  { icon: Award, label: "Especialización en Hipnosis Tradicional e Hipnosis Eriksoniana" },
+  { icon: Clock, label: "Más de 15 años de experiencia" },
+  { icon: Heart, label: "Enfoque Cognitivo Conductual" },
 ];
 
 const AboutSection = () => {
