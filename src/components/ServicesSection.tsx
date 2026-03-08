@@ -53,14 +53,19 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map(({ icon: Icon, title, description }, i) => (
+          {services.map(({ icon: Icon, title, description, showExpertiseStar }, i) => (
             <Card
               key={title}
-              className={`group border-border/50 hover:border-accent/40 hover:shadow-lg transition-all duration-300 bg-background ${
+              className={`group relative border-border/50 hover:border-accent/40 hover:shadow-lg transition-all duration-300 bg-background ${
                 isVisible ? "animate-fade-in-up" : "opacity-0"
               }`}
               style={{ animationDelay: `${i * 100}ms` }}
             >
+              {showExpertiseStar && (
+                <div className="absolute top-4 right-4">
+                  <Star size={18} className="text-primary fill-primary" />
+                </div>
+              )}
               <CardContent className="p-8">
                 <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
                   <Icon size={26} className="text-accent" />
@@ -70,10 +75,4 @@ const ServicesSection = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
 export default ServicesSection;
