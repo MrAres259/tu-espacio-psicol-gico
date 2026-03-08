@@ -60,7 +60,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="pt-24 pb-24">
+      <main className="pt-40 pb-24">
         <article className="container mx-auto px-4 max-w-3xl">
           <Link to="/blog" className="inline-flex items-center gap-2 text-accent hover:text-primary transition-colors mb-8 text-sm">
             <ArrowLeft size={16} /> Volver al blog
