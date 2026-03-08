@@ -32,7 +32,7 @@ const AboutSection = () => {
           </div>
 
           {/* Content */}
-          <div className={`${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
+          <div className={`md:col-span-3 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
             <p className="text-accent font-medium text-sm uppercase tracking-widest mb-2">Sobre Mí</p>
              <h2 className="text-4xl font-serif font-bold text-foreground mb-6">
               Dra. Liliana Carpio Torres
