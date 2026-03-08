@@ -75,4 +75,10 @@ const ServicesSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default ServicesSection;
