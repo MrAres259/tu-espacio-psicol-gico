@@ -15,7 +15,7 @@ const AboutSection = () => {
   return (
     <section id="sobre-mi" className="py-24 bg-background">
       <div className="container mx-auto px-4" ref={ref}>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-5 gap-16 items-center">
           {/* Photo placeholder */}
           <div className={`${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
             <div className="relative">
