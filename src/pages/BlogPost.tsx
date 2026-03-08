@@ -80,10 +80,10 @@ const BlogPost = () => {
               <span className="flex items-center gap-1"><Clock size={14} />{post.readTime}</span>
             </div>
 
-            {/* Image placeholder */}
-            <div className="aspect-video rounded-2xl bg-secondary flex items-center justify-center mb-10">
-              <span className="text-muted-foreground text-sm">Imagen del artículo</span>
-            </div>
+            {/* Blog image */}
+            {post.image && (
+              <img src={post.image} alt={post.title} className="w-full aspect-video rounded-2xl object-cover mb-10" />
+            )}
 
             <div className="prose-warm">{renderContent(post.content)}</div>
           </div>
