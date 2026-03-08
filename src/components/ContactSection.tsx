@@ -43,8 +43,17 @@ const ContactSection = () => {
         </div>
 
         {/* Map placeholder */}
-        <div className={`mt-16 max-w-4xl mx-auto rounded-2xl overflow-hidden bg-muted h-64 flex items-center justify-center border border-border/50 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
-          <p className="text-muted-foreground text-sm">📍 Mapa de ubicación (reemplazar con Google Maps)</p>
+        <div className={`mt-16 max-w-4xl mx-auto rounded-2xl overflow-hidden border border-border/50 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
+          <iframe
+            title="Ubicación Ciudad de México CP 11360"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15055.08!2d-99.1847!3d19.4284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c5b0000001%3A0x0!2zMTnCsDI1JzQyLjAiTiA5OcKwMTEnMDQuOSJX!5e0!3m2!1ses!2smx!4v1700000000000"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </section>
