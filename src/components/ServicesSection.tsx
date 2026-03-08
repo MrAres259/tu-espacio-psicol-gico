@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { User, Users, Monitor, Brain, Baby, Flower2 } from "lucide-react";
+import { User, Users, Monitor, Brain, Baby, Flower2, Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
@@ -7,6 +7,7 @@ const services = [
     icon: User,
     title: "Terapia Individual",
     description: "Sesiones personalizadas enfocadas en tu bienestar emocional, autoconocimiento y crecimiento personal.",
+    showExpertiseStar: true,
   },
   {
     icon: Users,
@@ -20,8 +21,8 @@ const services = [
   },
   {
     icon: Brain,
-    title: "Disminución/Eliminación de Insomnio, Miedo, Ansiedad y Depresión",
-    description: "Técnicas y herramientas poderosas para superar estos padecimientos y recuperar tu tranquilidad.",
+    title: "Adiós a la Ansiedad y el Insomnio",
+    description: "Descubre estrategias probadas para superar la depresión y retomar el control de tu vida.",
   },
   {
     icon: Baby,
@@ -32,9 +33,9 @@ const services = [
     icon: Flower2,
     title: "Hipnosis Clínica",
     description: "Neurociencias aplicadas para liberarte tanto de heridas emocionales y traumas como de enfermedades importantes como cáncer, diabetes y problemas de tiroides.",
+    showExpertiseStar: true,
   },
 ];
-
 const ServicesSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
@@ -52,14 +53,19 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map(({ icon: Icon, title, description }, i) => (
+          {services.map(({ icon: Icon, title, description, showExpertiseStar }, i) => (
             <Card
               key={title}
-              className={`group border-border/50 hover:border-accent/40 hover:shadow-lg transition-all duration-300 bg-background ${
+              className={`group relative border-border/50 hover:border-accent/40 hover:shadow-lg transition-all duration-300 bg-background ${
                 isVisible ? "animate-fade-in-up" : "opacity-0"
               }`}
               style={{ animationDelay: `${i * 100}ms` }}
             >
+              {showExpertiseStar && (
+                <div className="absolute top-4 right-4">
+                  <Star size={18} className="text-primary fill-primary" />
+                </div>
+              )}
               <CardContent className="p-8">
                 <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
                   <Icon size={26} className="text-accent" />
