@@ -30,7 +30,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
-            En Lumina Despertar te acompañamos en el camino de Bienestar, Salud y Prosperidad con calidez, profesionalismo y un enfoque centrado en ti.
+            En Lumina Despertar te acompañamos en tu camino hacia el <span className="font-semibold text-foreground">BIENESTAR</span> en todas las áreas vitales, con calidez, profesionalismo y un enfoque centrado en ti.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

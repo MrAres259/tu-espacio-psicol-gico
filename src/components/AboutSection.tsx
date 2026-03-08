@@ -40,15 +40,7 @@ const AboutSection = () => {
               Dra. Liliana Carpio Torres
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Soy psicóloga clínica con más de 30 años de experiencia acompañando personas
-              en su proceso de autoconocimiento, liberándose de las cargas que dejan heridas
-              y traumas a lo largo de la vida, logrando desarrollo y crecimiento en todas las
-              esferas vitales, alcanzando así bienestar y plenitud.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              Creo firmemente que cada persona tiene la capacidad de transformar su vida.
-              Mi rol es ser tu guía y compañera en la senda del despertar interior, brindándote las
-              herramientas necesarias para alcanzar tu máximo potencial.
+              Soy psicóloga clínica con más de 15 años de experiencia acompañando a personas en su proceso de autoconocimiento y bienestar en todas las esferas de su vida. Mi enfoque terapéutico es el cognitivo conductual combinando herramientas poderosas proveniente de la Hipnosis Clínica con un método único en el mundo que te permiten sanar traumas emocionales y enfermedades físicas para alcanzar tu máximo potencial y éxito en tu vida.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
