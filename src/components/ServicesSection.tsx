@@ -20,8 +20,8 @@ const services = [
   },
   {
     icon: Brain,
-    title: "Manejo de Ansiedad",
-    description: "Técnicas y herramientas para gestionar la ansiedad y recuperar tu tranquilidad.",
+    title: "Disminución/Eliminación de Insomnio, Miedo, Ansiedad y Depresión",
+    description: "Técnicas y herramientas poderosas para superar estos padecimientos y recuperar tu tranquilidad.",
   },
   {
     icon: Baby,
@@ -30,8 +30,8 @@ const services = [
   },
   {
     icon: Flower2,
-    title: "Mindfulness",
-    description: "Aprende técnicas de atención plena para vivir con mayor presencia y equilibrio.",
+    title: "Hipnosis Clínica",
+    description: "Neurociencias aplicadas para liberarte tanto de heridas emocionales y traumas como de enfermedades importantes como cáncer, diabetes y problemas de tiroides.",
   },
 ];
 
