@@ -15,10 +15,10 @@ const Blog = () => {
           <div className="text-center mb-16 animate-fade-in-up">
             <p className="text-accent font-medium text-sm uppercase tracking-widest mb-2">Blog</p>
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
-              Artículos sobre Bienestar
+              Un Espacio para Conocer Cómo Podemos Ayudarte
             </h1>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Recursos y reflexiones para tu crecimiento personal y bienestar emocional.
+              Descubre nuestros servicios y aprende las mejores formas en que podemos acompañarte en tu camino hacia el bienestar.
             </p>
           </div>
 
