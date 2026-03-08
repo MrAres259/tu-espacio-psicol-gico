@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { GraduationCap, Award, Heart, Clock } from "lucide-react";
-import diplomaImage from "@/assets/liliana-diploma.jpg";
+import lialianaPhoto from "@/assets/liliana-photo.png";
 
 const highlights = [
   { icon: GraduationCap, label: "Licenciada en Psicología por la Universidad Nacional Autónoma de México" },
