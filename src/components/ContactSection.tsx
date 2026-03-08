@@ -4,8 +4,8 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 const contactInfo = [
   { icon: Phone, label: "Teléfono", value: "+1 234 567 890" },
   { icon: Mail, label: "Email", value: "contacto@luminadespertar.com" },
-  { icon: MapPin, label: "Dirección", value: "Ciudad de México CP 11360" },
-  { icon: Clock, label: "Horarios", value: "Lun-Vie: 9:00 - 18:00" },
+  { icon: MapPin, label: "Dirección", value: "Col. Agricultura, Ciudad de México CP 11360" },
+  { icon: Clock, label: "Horarios", value: "Lunes - Domingo: 8:00 AM - 10:00 PM" },
 ];
 
 const ContactSection = () => {
@@ -45,8 +45,8 @@ const ContactSection = () => {
         {/* Map placeholder */}
         <div className={`mt-16 max-w-4xl mx-auto rounded-2xl overflow-hidden border border-border/50 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
           <iframe
-            title="Ubicación Ciudad de México CP 11360"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15055.08!2d-99.1847!3d19.4284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c5b0000001%3A0x0!2zMTnCsDI1JzQyLjAiTiA5OcKwMTEnMDQuOSJX!5e0!3m2!1ses!2smx!4v1700000000000"
+            title="Ubicación Colonia Agricultura, Ciudad de México CP 11360"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5!2d-99.1745!3d19.4450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f992c5a5e9ab%3A0x4b3c5de8e4e5b5a1!2sAgricultura%2C+Miguel+Hidalgo%2C+11360+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1700000000000"
             width="100%"
             height="300"
             style={{ border: 0 }}
