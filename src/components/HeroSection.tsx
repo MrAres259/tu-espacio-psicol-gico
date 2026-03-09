@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/qr/KUBH4RAP4WY4F1";
+const WHATSAPP_URL = "https://wa.me/message/J2EODMHICX5ZM1";
 
 const HeroSection = () => {
   return (
