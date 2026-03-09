@@ -13,7 +13,7 @@ const navLinks = [
   { label: "Contacto", href: "#contacto" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/qr/KUBH4RAP4WY4F1";
+const WHATSAPP_URL = "https://wa.me/message/J2EODMHICX5ZM1";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
