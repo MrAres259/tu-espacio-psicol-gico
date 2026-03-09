@@ -2,8 +2,8 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const contactInfo = [
-  { icon: Phone, label: "Teléfono", value: "+1 234 567 890" },
-  { icon: Mail, label: "Email", value: "contacto@luminadespertar.com" },
+  { icon: Phone, label: "Teléfono", value: "+52 55 4113 7017" },
+  { icon: Mail, label: "Email", value: "luminadespertar.psi@gmail.com" },
   { icon: MapPin, label: "Dirección", value: "Col. Agricultura, Ciudad de México CP 11360" },
   { icon: Clock, label: "Horarios", value: "Lunes - Domingo: 8:00 AM - 10:00 PM" },
 ];
@@ -28,13 +28,13 @@ const ContactSection = () => {
           {contactInfo.map(({ icon: Icon, label, value }, i) => (
             <div
               key={label}
-              className={`text-center p-6 rounded-2xl bg-background shadow-sm border border-border/50 ${
-                isVisible ? "animate-fade-in-up" : "opacity-0"
-              }`}
-              style={{ animationDelay: `${i * 100}ms` }}
+              className={`group text-center p-6 rounded-2xl bg-background shadow-sm border border-border/50 cursor-default
+                transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-accent/40
+                ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
+              style={{ animationDelay: `${i * 120}ms` }}
             >
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                <Icon size={22} className="text-accent" />
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-accent/20 group-hover:scale-110">
+                <Icon size={22} className="text-accent transition-transform duration-300 group-hover:scale-110" />
               </div>
               <p className="font-semibold text-foreground text-sm mb-1">{label}</p>
               <p className="text-muted-foreground text-sm">{value}</p>
