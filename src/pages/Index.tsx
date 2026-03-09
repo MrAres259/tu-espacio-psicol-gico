@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -8,6 +10,18 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+
+    // Wait one frame so the sections are mounted before attempting to scroll.
+    requestAnimationFrame(() => {
+      const el = document.querySelector(hash);
+      el?.scrollIntoView({ behavior: "smooth" });
+    });
+  }, [hash]);
+
   return (
     <div className="min-h-screen">
       <Navbar />

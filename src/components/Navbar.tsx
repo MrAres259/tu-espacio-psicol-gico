@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/Logo.png";
@@ -20,6 +20,8 @@ const Navbar = () => {
   const [hidden, setHidden] = useState(false);
   const [hovered, setHovered] = useState(false);
   const lastScrollY = useRef(0);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => {
@@ -33,10 +35,17 @@ const Navbar = () => {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    if (href.startsWith("#")) {
-      const el = document.querySelector(href);
-      el?.scrollIntoView({ behavior: "smooth" });
+
+    if (!href.startsWith("#")) return;
+
+    // If we are not on the home page, navigate to / with the hash.
+    if (location.pathname !== "/") {
+      navigate(`/${href}`);
+      return;
     }
+
+    const el = document.querySelector(href);
+    el?.scrollIntoView({ behavior: "smooth" });
   };
 
   const show = !hidden || hovered || window.scrollY <= 0;
