@@ -34,9 +34,10 @@ const AboutSection = () => {
           {/* Content */}
           <div className={`md:col-span-3 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
             <p className="text-accent font-medium text-sm uppercase tracking-widest mb-2">Sobre Mí</p>
-             <h2 className="text-4xl font-serif font-bold text-foreground mb-6">
+             <h2 className="text-4xl font-serif font-bold text-foreground mb-2">
               Dra. Liliana Carpio Torres
             </h2>
+            <p className="text-sm text-muted-foreground mb-6">Cédula Profesional: 14981262</p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Soy psicóloga clínica con más de 15 años de experiencia acompañando a personas en su proceso de autoconocimiento y bienestar en todas las esferas de su vida. Mi enfoque terapéutico es el cognitivo conductual combinando herramientas poderosas proveniente de la Hipnosis Clínica con un método único en el mundo que te permiten sanar traumas emocionales y enfermedades físicas para alcanzar tu máximo potencial y éxito en tu vida.
             </p>
