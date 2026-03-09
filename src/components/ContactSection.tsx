@@ -37,7 +37,7 @@ const ContactSection = () => {
                 <Icon size={22} className="text-accent transition-transform duration-300 group-hover:scale-110" />
               </div>
               <p className="font-semibold text-foreground text-sm mb-1">{label}</p>
-              <p className="text-muted-foreground text-sm">{value}</p>
+              <p className="text-muted-foreground text-sm break-words">{value}</p>
             </div>
           ))}
         </div>
