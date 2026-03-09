@@ -17,8 +17,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3 text-sm uppercase tracking-widest">Contacto</h4>
             <div className="space-y-2 text-sm text-primary-foreground/70">
-              <div className="flex items-center gap-2"><Phone size={14} /> +1 234 567 890</div>
-              <div className="flex items-center gap-2"><Mail size={14} /> contacto@luminadespertar.com</div>
+              <div className="flex items-center gap-2"><Phone size={14} /> +52 55 4113 7017</div>
+              <div className="flex items-center gap-2"><Mail size={14} /> luminadespertar.psi@gmail.com</div>
               <a href="https://www.google.com/maps/dir//Metro+Normal,+Ciudad+de+M%C3%A9xico" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
                 Colonia Agricultura, CP 11360, Ciudad de México (cerca de Metro Normal)
               </a>
