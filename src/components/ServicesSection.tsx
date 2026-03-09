@@ -19,11 +19,11 @@ const services = [
     title: "Terapia Online",
     description: "Sesiones desde la comodidad de tu hogar con la misma calidad y profesionalismo.",
   },
-  {
-    icon: Brain,
-    title: "Adiós a la Ansiedad y el Insomnio",
-    description: "Descubre estrategias probadas para superar la depresión y retomar el control de tu vida.",
-  },
+   {
+     icon: Brain,
+     title: "Adiós a la Ansiedad y el Insomnio",
+     description: "Descubre estrategias probadas para superar estas problemáticas y retomar el control de tu vida.",
+   },
   {
     icon: Baby,
     title: "Terapia Infantil",
