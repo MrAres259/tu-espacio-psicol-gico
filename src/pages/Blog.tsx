@@ -24,40 +24,38 @@ const Blog = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {blogPosts.map((post, i) => (
-              <Card
-                key={post.id}
-                className="group overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${i * 100}ms` }}
-              >
-                {post.image ? (
-                  <img src={post.image} alt={post.title} className="aspect-[16/10] w-full object-cover" />
-                ) : (
-                  <div className="aspect-[16/10] bg-secondary flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">Imagen del artículo</span>
-                  </div>
-                )}
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
-                    <span className="bg-accent/10 text-accent px-2 py-0.5 rounded-full font-medium">
-                      {post.category}
+              <Link key={post.id} to={`/blog/${post.id}`} className="block">
+                <Card
+                  className="group overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300 animate-fade-in-up cursor-pointer h-full"
+                  style={{ animationDelay: `${i * 100}ms` }}
+                >
+                  {post.image ? (
+                    <img src={post.image} alt={post.title} className="aspect-[16/10] w-full object-cover" />
+                  ) : (
+                    <div className="aspect-[16/10] bg-secondary flex items-center justify-center">
+                      <span className="text-muted-foreground text-sm">Imagen del artículo</span>
+                    </div>
+                  )}
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                      <span className="bg-accent/10 text-accent px-2 py-0.5 rounded-full font-medium">
+                        {post.category}
+                      </span>
+                      <span className="flex items-center gap-1"><Calendar size={12} />{post.date}</span>
+                      <span className="flex items-center gap-1"><Clock size={12} />{post.readTime}</span>
+                    </div>
+                    <h2 className="text-lg font-serif font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h2>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                    <span className="inline-flex items-center gap-1 text-sm font-medium text-accent group-hover:text-primary transition-colors">
+                      Leer más <ArrowRight size={14} />
                     </span>
-                    <span className="flex items-center gap-1"><Calendar size={12} />{post.date}</span>
-                    <span className="flex items-center gap-1"><Clock size={12} />{post.readTime}</span>
-                  </div>
-                  <h2 className="text-lg font-serif font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {post.title}
-                  </h2>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  <Link
-                    to={`/blog/${post.id}`}
-                    className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:text-primary transition-colors"
-                  >
-                    Leer más <ArrowRight size={14} />
-                  </Link>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
