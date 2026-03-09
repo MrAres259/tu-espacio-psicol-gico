@@ -5,17 +5,17 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Paciente",
+    name: "Rosa V.",
     text: "Lili preciosa, que importante ha sido tu Terapia, pues el miedo al terremoto del 85, vivido en CMN, me marcó hasta antes de conocerte, tú trato, explicación de la hipnosis, y llevarlo a cabo, me funcionó en breve tiempo. Gracias y que muchos pacientes lo acepten y se maravillaran del resultado.",
     rating: 5,
   },
   {
-    name: "Paciente",
+    name: "Laura M.",
     text: "Inicié mi proceso terapéutico hace casi un año, buscando herramientas para manejar el agotamiento emocional en mi vida cotidiana.\n\nDurante las sesiones presenciales o vía zoom, me he sentido escuchada, comprendida y sobre todo acompañada...inclusive fuera de las sesiones programadas, Lily me ha permitido mantener un canal de comunicación 24/7, lo que favorece la confianza de decirle en el momento, que atravieso algún episodio que me rebasa, retroalimentándome a la brevedad posible.\n\nA lo largo de la terapia, a través de diferentes metodologías, poco a poco he aprendido a poner orden en mi vida, reconocer mis emociones y a darles un lugar sin juzgarme; he aplicado la observación a conductas repetitivas y hábitos recurrentes dañinos a lo largo de mi vida, así como a reflexionar en los pensamientos que me resultan negativos.\n\nHe reconocido mi valía y la importancia de amarme y cuidarme poniendo límites que, aunque me son aún difíciles de establecer, siento he tenido avances en fijarme límites a mí misma.\n\nLa forma en que mi psicoterapeuta me acompaña es cálida, solidaria, humana, sumamente paciente y clara, lo cual me ha brindado la confianza para abrirme y trabajar aspectos que antaño evitaba.\n\nEste proceso ha sido transformador, considero que tengo más consciencia y más herramientas para enfrentar mis retos. Para mí la terapia es como un bálsamo!. Estoy agradecida por el acompañamiento recibido.",
     rating: 5,
   },
   {
-    name: "Paciente",
+    name: "Betzabé M.",
     text: "El acompañamiento terapéutico es extraordinario, he encontrado a la especialista correcta, sumamente profesional, empática, cálida, respetuosa y con el conocimiento y experiencia necesaria para contener, apoyar y atender de manera inmediata cualquier situación por difícil que sea. Cada una de las sesiones me ha permitido identificar temas a trabajar, me ha ofrecido la posibilidad de construir herramientas y encontrar soluciones a diversas situaciones personales.",
     rating: 5,
   },
