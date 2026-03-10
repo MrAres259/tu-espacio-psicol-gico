@@ -43,8 +43,14 @@ const AboutSection = () => {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {highlights.map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-start gap-3 p-3 rounded-xl bg-secondary/50">
+              {highlights.map(({ icon: Icon, label }, i) => (
+                <div
+                  key={label}
+                  className={`flex items-start gap-3 p-3 rounded-xl bg-secondary/50 hover:shadow-lg hover:border-accent/40 border border-transparent transition-all duration-300 ${
+                    isVisible ? "animate-fade-in-up" : "opacity-0"
+                  }`}
+                  style={{ animationDelay: `${i * 100}ms` }}
+                >
                   <Icon size={20} className="text-accent mt-0.5 shrink-0" />
                   <span className="text-sm text-foreground/80">{label}</span>
                 </div>
