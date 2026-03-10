@@ -39,8 +39,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 pt-6 text-center text-sm text-primary-foreground/50">
-          © {new Date().getFullYear()} Lumina Despertar. Todos los derechos reservados.
+        <div className="border-t border-primary-foreground/10 pt-6 text-center text-sm text-primary-foreground/50 space-y-2">
+          <p>© {new Date().getFullYear()} Lumina Despertar. Todos los derechos reservados.</p>
+          <p>Hecho con ☕ y código por <a href="https://www.mrares259.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary-foreground transition-colors">Mrares259</a></p>
         </div>
       </div>
     </footer>
