@@ -42,7 +42,7 @@ const TestimonialCard = ({
 
   return (
     <Card
-      className={`border-border/50 bg-secondary/30 flex flex-col ${animClass}`}
+      className={`border-border/50 hover:border-accent/40 hover:shadow-lg transition-all duration-300 bg-secondary/30 flex flex-col ${animClass}`}
       style={{ animationDelay: delay }}
     >
       <CardContent className="p-8 flex flex-col flex-1">
