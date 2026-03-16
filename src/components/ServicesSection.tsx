@@ -62,8 +62,9 @@ const ServicesSection = () => {
               style={{ animationDelay: `${i * 100}ms` }}
             >
               {showExpertiseStar && (
-                <div className="absolute top-4 right-4">
-                  <Star size={18} className="text-primary fill-primary" />
+                <div className="absolute top-3 right-3 flex items-center gap-1 bg-gradient-to-r from-primary to-accent text-primary-foreground px-2.5 py-1 rounded-full shadow-sm">
+                  <Sparkles size={12} className="fill-current" />
+                  <span className="text-[10px] font-semibold uppercase tracking-wider">Especialidad</span>
                 </div>
               )}
               <CardContent className="p-8">
