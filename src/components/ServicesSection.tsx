@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { User, Users, Monitor, Brain, Baby, Flower2, Star } from "lucide-react";
+import { User, Users, Monitor, Brain, Baby, Flower2, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
