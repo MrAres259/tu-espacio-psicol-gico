@@ -4,9 +4,11 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { blogPosts } from "@/lib/blogData";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { useCanonical } from "@/hooks/useCanonical";
 
 const BlogPost = () => {
   const { id } = useParams();
+  useCanonical(`/blog/${id}`);
   const post = blogPosts.find((p) => p.id === id);
 
   if (!post) {

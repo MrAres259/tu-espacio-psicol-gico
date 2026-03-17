@@ -5,8 +5,10 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { blogPosts } from "@/lib/blogData";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { useCanonical } from "@/hooks/useCanonical";
 
 const Blog = () => {
+  useCanonical("/blog");
   return (
     <div className="min-h-screen">
       <Navbar />
